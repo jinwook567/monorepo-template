@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-template",
+  "version": "1.0.0",
+  "description": "monorepo-template using yarn berry workspaces",
+  "main": "index.js",
+  "author": "jinwook567",
+  "license": "MIT",
+  "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "latest",
+    "typescript": "^4.9.4"
+  }
+}
