@@ -10,8 +10,6 @@ yarn berry workspace를 활용한 모노레포 프로젝트 템플릿.
 # tsconfig 설정
 
 참조할 프로젝트의 경로를 root tsconfig.base.json의 references에 설정한다.
-리액트 프로젝트일 경우 tsconfig.react.json을 references로 설정합니다.
-
 참조될 개별 프로젝트의 tsconfig에는 composite 및 declartion을 설정합니다.
 
 # 새로운 프로젝트
@@ -22,4 +20,4 @@ yarn berry workspace를 활용한 모노레포 프로젝트 템플릿.
    - dependencies를 설정한다.
    - 참조할 프로젝트가 있다면 dependencies에 추가한다.
 3. tsconfig.json을 생성합니다.
-   - 공통으로 사용하는 tsconfig가 있다면 extends 합니다.
+   - root의 tsconfig.base.json을 extends 후 필요한 옵션을 개별적으로 설정해줍니다.
